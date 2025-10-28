@@ -250,13 +250,13 @@
 
 	qcom,mdss-dsi-pan-enable-dynamic-fps;
 	qcom,mdss-dsi-pan-fps-update = "dfps_immediate_porch_mode_vfp";
-	qcom,dsi-supported-dfps-list = <120 144 90  60   50   48   30>;
-	qcom,dsi-dfps-hfp-list       = <118 57  118 118  118  118  118>;
-	qcom,dsi-dfps-hbp-list       = <100 38  100 100  100  100  100>;
-	qcom,dsi-dfps-hpw-list       = <20  20  20  20   20   20   20>;
-	qcom,dsi-dfps-vbp-list       = <208 208 208 208  208  208  208>;
-	qcom,dsi-dfps-vfp-list       = <26  26  811 2382 3324 3560 7094>;
-	qcom,dsi-dfps-vpw-list       = <2   2   2   2    2    2    2>;
+	qcom,dsi-supported-dfps-list = <120 144 60   30>;
+	qcom,dsi-dfps-hfp-list       = <118 57  118  118>;
+	qcom,dsi-dfps-hbp-list       = <100 38  100  100>;
+	qcom,dsi-dfps-hpw-list       = <20  20  20   20>;
+	qcom,dsi-dfps-vbp-list       = <208 208 208  208>;
+	qcom,dsi-dfps-vfp-list       = <26  26  2382 7094>;
+	qcom,dsi-dfps-vpw-list       = <2   2   2    2>;
 
 	qcom,mdss-dsi-display-timings {
 		timing@0 {
@@ -272,7 +272,7 @@
 				39 00 00 40 00 00 02 B2 91
 				39 00 00 00 00 00 02 B3 40
 			];
-			qcom,mdss-dsi-fps-switch-90-command = [
+			/* qcom,mdss-dsi-fps-switch-90-command = [
 				39 00 00 40 00 00 02 B2 00
 				39 00 00 00 00 00 02 B3 80
 			];
@@ -283,7 +283,7 @@
 			qcom,mdss-dsi-fps-switch-48-command = [
 				39 00 00 40 00 00 02 B2 00
 				39 00 00 00 00 00 02 B3 80
-			];
+			]; */
 			qcom,mdss-dsi-fps-switch-144-command = [
 				39 00 00 40 00 00 02 B2 00
 				39 00 00 00 00 00 02 B3 00
@@ -293,9 +293,9 @@
 			qcom,mdss-dsi-fps-switch-120-command-state = "dsi_lp_mode";
 			qcom,mdss-dsi-fps-switch-60-command-state = "dsi_lp_mode";
 			qcom,mdss-dsi-fps-switch-30-command-state = "dsi_lp_mode";
-			qcom,mdss-dsi-fps-switch-90-command-state = "dsi_lp_mode";
+			/* qcom,mdss-dsi-fps-switch-90-command-state = "dsi_lp_mode";
 			qcom,mdss-dsi-fps-switch-50-command-state = "dsi_lp_mode";
-			qcom,mdss-dsi-fps-switch-48-command-state = "dsi_lp_mode";
+			qcom,mdss-dsi-fps-switch-48-command-state = "dsi_lp_mode"; */
 			qcom,mdss-dsi-fps-switch-144-command-state = "dsi_lp_mode";
 		};
 	};
